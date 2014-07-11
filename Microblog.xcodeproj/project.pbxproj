@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		679D74A1196FCAD300BD6265 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A0196FCAD300BD6265 /* Foundation.framework */; };
+		679D74A3196FCAD300BD6265 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A2196FCAD300BD6265 /* CoreGraphics.framework */; };
+		679D74A5196FCAD300BD6265 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A4196FCAD300BD6265 /* UIKit.framework */; };
+		679D74AB196FCAD300BD6265 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 679D74A9196FCAD300BD6265 /* InfoPlist.strings */; };
+		679D74AD196FCAD300BD6265 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74AC196FCAD300BD6265 /* main.m */; };
+		679D74B1196FCAD300BD6265 /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74B0196FCAD300BD6265 /* JWAppDelegate.m */; };
+		679D74B4196FCAD300BD6265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D74B2196FCAD300BD6265 /* Main.storyboard */; };
+		679D74B7196FCAD300BD6265 /* JWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74B6196FCAD300BD6265 /* JWViewController.m */; };
+		679D74B9196FCAD300BD6265 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679D74B8196FCAD300BD6265 /* Images.xcassets */; };
+		679D74C0196FCAD400BD6265 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74BF196FCAD400BD6265 /* XCTest.framework */; };
+		679D74C1196FCAD400BD6265 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A0196FCAD300BD6265 /* Foundation.framework */; };
+		679D74C2196FCAD400BD6265 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A4196FCAD300BD6265 /* UIKit.framework */; };
+		679D74CA196FCAD400BD6265 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 679D74C8196FCAD400BD6265 /* InfoPlist.strings */; };
+		679D74CC196FCAD400BD6265 /* MicroblogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74CB196FCAD400BD6265 /* MicroblogTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		679D74C3196FCAD400BD6265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 679D7495196FCAD300BD6265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 679D749C196FCAD300BD6265;
+			remoteInfo = Microblog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		679D749D196FCAD300BD6265 /* Microblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Microblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		679D74A0196FCAD300BD6265 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		679D74A2196FCAD300BD6265 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		679D74A4196FCAD300BD6265 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		679D74A8196FCAD300BD6265 /* Microblog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Microblog-Info.plist"; sourceTree = "<group>"; };
+		679D74AA196FCAD300BD6265 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		679D74AC196FCAD300BD6265 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		679D74AE196FCAD300BD6265 /* Microblog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Microblog-Prefix.pch"; sourceTree = "<group>"; };
+		679D74AF196FCAD300BD6265 /* JWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAppDelegate.h; sourceTree = "<group>"; };
+		679D74B0196FCAD300BD6265 /* JWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAppDelegate.m; sourceTree = "<group>"; };
+		679D74B3196FCAD300BD6265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		679D74B5196FCAD300BD6265 /* JWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWViewController.h; sourceTree = "<group>"; };
+		679D74B6196FCAD300BD6265 /* JWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWViewController.m; sourceTree = "<group>"; };
+		679D74B8196FCAD300BD6265 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		679D74BE196FCAD400BD6265 /* MicroblogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroblogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		679D74BF196FCAD400BD6265 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		679D74C7196FCAD400BD6265 /* MicroblogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MicroblogTests-Info.plist"; sourceTree = "<group>"; };
+		679D74C9196FCAD400BD6265 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		679D74CB196FCAD400BD6265 /* MicroblogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MicroblogTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		679D749A196FCAD300BD6265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679D74A3196FCAD300BD6265 /* CoreGraphics.framework in Frameworks */,
+				679D74A5196FCAD300BD6265 /* UIKit.framework in Frameworks */,
+				679D74A1196FCAD300BD6265 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679D74BB196FCAD400BD6265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679D74C0196FCAD400BD6265 /* XCTest.framework in Frameworks */,
+				679D74C2196FCAD400BD6265 /* UIKit.framework in Frameworks */,
+				679D74C1196FCAD400BD6265 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		679D7494196FCAD300BD6265 = {
+			isa = PBXGroup;
+			children = (
+				679D74A6196FCAD300BD6265 /* Microblog */,
+				679D74C5196FCAD400BD6265 /* MicroblogTests */,
+				679D749F196FCAD300BD6265 /* Frameworks */,
+				679D749E196FCAD300BD6265 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		679D749E196FCAD300BD6265 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				679D749D196FCAD300BD6265 /* Microblog.app */,
+				679D74BE196FCAD400BD6265 /* MicroblogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		679D749F196FCAD300BD6265 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				679D74A0196FCAD300BD6265 /* Foundation.framework */,
+				679D74A2196FCAD300BD6265 /* CoreGraphics.framework */,
+				679D74A4196FCAD300BD6265 /* UIKit.framework */,
+				679D74BF196FCAD400BD6265 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		679D74A6196FCAD300BD6265 /* Microblog */ = {
+			isa = PBXGroup;
+			children = (
+				679D74AF196FCAD300BD6265 /* JWAppDelegate.h */,
+				679D74B0196FCAD300BD6265 /* JWAppDelegate.m */,
+				679D74B2196FCAD300BD6265 /* Main.storyboard */,
+				679D74B5196FCAD300BD6265 /* JWViewController.h */,
+				679D74B6196FCAD300BD6265 /* JWViewController.m */,
+				679D74B8196FCAD300BD6265 /* Images.xcassets */,
+				679D74A7196FCAD300BD6265 /* Supporting Files */,
+			);
+			path = Microblog;
+			sourceTree = "<group>";
+		};
+		679D74A7196FCAD300BD6265 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				679D74A8196FCAD300BD6265 /* Microblog-Info.plist */,
+				679D74A9196FCAD300BD6265 /* InfoPlist.strings */,
+				679D74AC196FCAD300BD6265 /* main.m */,
+				679D74AE196FCAD300BD6265 /* Microblog-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		679D74C5196FCAD400BD6265 /* MicroblogTests */ = {
+			isa = PBXGroup;
+			children = (
+				679D74CB196FCAD400BD6265 /* MicroblogTests.m */,
+				679D74C6196FCAD400BD6265 /* Supporting Files */,
+			);
+			path = MicroblogTests;
+			sourceTree = "<group>";
+		};
+		679D74C6196FCAD400BD6265 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				679D74C7196FCAD400BD6265 /* MicroblogTests-Info.plist */,
+				679D74C8196FCAD400BD6265 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		679D749C196FCAD300BD6265 /* Microblog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679D74CF196FCAD400BD6265 /* Build configuration list for PBXNativeTarget "Microblog" */;
+			buildPhases = (
+				679D7499196FCAD300BD6265 /* Sources */,
+				679D749A196FCAD300BD6265 /* Frameworks */,
+				679D749B196FCAD300BD6265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Microblog;
+			productName = Microblog;
+			productReference = 679D749D196FCAD300BD6265 /* Microblog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		679D74BD196FCAD400BD6265 /* MicroblogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679D74D2196FCAD400BD6265 /* Build configuration list for PBXNativeTarget "MicroblogTests" */;
+			buildPhases = (
+				679D74BA196FCAD400BD6265 /* Sources */,
+				679D74BB196FCAD400BD6265 /* Frameworks */,
+				679D74BC196FCAD400BD6265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				679D74C4196FCAD400BD6265 /* PBXTargetDependency */,
+			);
+			name = MicroblogTests;
+			productName = MicroblogTests;
+			productReference = 679D74BE196FCAD400BD6265 /* MicroblogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		679D7495196FCAD300BD6265 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					679D74BD196FCAD400BD6265 = {
+						TestTargetID = 679D749C196FCAD300BD6265;
+					};
+				};
+			};
+			buildConfigurationList = 679D7498196FCAD300BD6265 /* Build configuration list for PBXProject "Microblog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 679D7494196FCAD300BD6265;
+			productRefGroup = 679D749E196FCAD300BD6265 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				679D749C196FCAD300BD6265 /* Microblog */,
+				679D74BD196FCAD400BD6265 /* MicroblogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		679D749B196FCAD300BD6265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679D74B9196FCAD300BD6265 /* Images.xcassets in Resources */,
+				679D74AB196FCAD300BD6265 /* InfoPlist.strings in Resources */,
+				679D74B4196FCAD300BD6265 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679D74BC196FCAD400BD6265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679D74CA196FCAD400BD6265 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		679D7499196FCAD300BD6265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679D74AD196FCAD300BD6265 /* main.m in Sources */,
+				679D74B7196FCAD300BD6265 /* JWViewController.m in Sources */,
+				679D74B1196FCAD300BD6265 /* JWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679D74BA196FCAD400BD6265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679D74CC196FCAD400BD6265 /* MicroblogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		679D74C4196FCAD400BD6265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 679D749C196FCAD300BD6265 /* Microblog */;
+			targetProxy = 679D74C3196FCAD400BD6265 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		679D74A9196FCAD300BD6265 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				679D74AA196FCAD300BD6265 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		679D74B2196FCAD300BD6265 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				679D74B3196FCAD300BD6265 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		679D74C8196FCAD400BD6265 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				679D74C9196FCAD400BD6265 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		679D74CD196FCAD400BD6265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		679D74CE196FCAD400BD6265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		679D74D0196FCAD400BD6265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Microblog/Microblog-Prefix.pch";
+				INFOPLIST_FILE = "Microblog/Microblog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		679D74D1196FCAD400BD6265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Microblog/Microblog-Prefix.pch";
+				INFOPLIST_FILE = "Microblog/Microblog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		679D74D3196FCAD400BD6265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Microblog.app/Microblog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Microblog/Microblog-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MicroblogTests/MicroblogTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		679D74D4196FCAD400BD6265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Microblog.app/Microblog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Microblog/Microblog-Prefix.pch";
+				INFOPLIST_FILE = "MicroblogTests/MicroblogTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		679D7498196FCAD300BD6265 /* Build configuration list for PBXProject "Microblog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679D74CD196FCAD400BD6265 /* Debug */,
+				679D74CE196FCAD400BD6265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679D74CF196FCAD400BD6265 /* Build configuration list for PBXNativeTarget "Microblog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679D74D0196FCAD400BD6265 /* Debug */,
+				679D74D1196FCAD400BD6265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		679D74D2196FCAD400BD6265 /* Build configuration list for PBXNativeTarget "MicroblogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679D74D3196FCAD400BD6265 /* Debug */,
+				679D74D4196FCAD400BD6265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 679D7495196FCAD300BD6265 /* Project object */;
+}
