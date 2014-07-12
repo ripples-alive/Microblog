@@ -14,13 +14,16 @@
 		679D74AD196FCAD300BD6265 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74AC196FCAD300BD6265 /* main.m */; };
 		679D74B1196FCAD300BD6265 /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74B0196FCAD300BD6265 /* JWAppDelegate.m */; };
 		679D74B4196FCAD300BD6265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D74B2196FCAD300BD6265 /* Main.storyboard */; };
-		679D74B7196FCAD300BD6265 /* JWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74B6196FCAD300BD6265 /* JWViewController.m */; };
 		679D74B9196FCAD300BD6265 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679D74B8196FCAD300BD6265 /* Images.xcassets */; };
 		679D74C0196FCAD400BD6265 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74BF196FCAD400BD6265 /* XCTest.framework */; };
 		679D74C1196FCAD400BD6265 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A0196FCAD300BD6265 /* Foundation.framework */; };
 		679D74C2196FCAD400BD6265 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A4196FCAD300BD6265 /* UIKit.framework */; };
 		679D74CA196FCAD400BD6265 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 679D74C8196FCAD400BD6265 /* InfoPlist.strings */; };
 		679D74CC196FCAD400BD6265 /* MicroblogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74CB196FCAD400BD6265 /* MicroblogTests.m */; };
+		679D74D7196FCE0B00BD6265 /* JWBlogDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74D6196FCE0B00BD6265 /* JWBlogDetailCell.m */; };
+		679D74DA196FCF7900BD6265 /* JWListBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */; };
+		679D74DD196FD06800BD6265 /* JWBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74DC196FD06700BD6265 /* JWBlog.m */; };
+		679D74E0196FD57100BD6265 /* JWAddBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,20 @@
 		679D74AF196FCAD300BD6265 /* JWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAppDelegate.h; sourceTree = "<group>"; };
 		679D74B0196FCAD300BD6265 /* JWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAppDelegate.m; sourceTree = "<group>"; };
 		679D74B3196FCAD300BD6265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		679D74B5196FCAD300BD6265 /* JWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWViewController.h; sourceTree = "<group>"; };
-		679D74B6196FCAD300BD6265 /* JWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWViewController.m; sourceTree = "<group>"; };
 		679D74B8196FCAD300BD6265 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		679D74BE196FCAD400BD6265 /* MicroblogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroblogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		679D74BF196FCAD400BD6265 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		679D74C7196FCAD400BD6265 /* MicroblogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MicroblogTests-Info.plist"; sourceTree = "<group>"; };
 		679D74C9196FCAD400BD6265 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		679D74CB196FCAD400BD6265 /* MicroblogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MicroblogTests.m; sourceTree = "<group>"; };
+		679D74D5196FCE0B00BD6265 /* JWBlogDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBlogDetailCell.h; sourceTree = "<group>"; };
+		679D74D6196FCE0B00BD6265 /* JWBlogDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBlogDetailCell.m; sourceTree = "<group>"; };
+		679D74D8196FCF7900BD6265 /* JWListBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWListBlogViewController.h; sourceTree = "<group>"; };
+		679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWListBlogViewController.m; sourceTree = "<group>"; };
+		679D74DB196FD06700BD6265 /* JWBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBlog.h; sourceTree = "<group>"; };
+		679D74DC196FD06700BD6265 /* JWBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBlog.m; sourceTree = "<group>"; };
+		679D74DE196FD57100BD6265 /* JWAddBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAddBlogViewController.h; sourceTree = "<group>"; };
+		679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAddBlogViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +124,14 @@
 				679D74AF196FCAD300BD6265 /* JWAppDelegate.h */,
 				679D74B0196FCAD300BD6265 /* JWAppDelegate.m */,
 				679D74B2196FCAD300BD6265 /* Main.storyboard */,
-				679D74B5196FCAD300BD6265 /* JWViewController.h */,
-				679D74B6196FCAD300BD6265 /* JWViewController.m */,
+				679D74DE196FD57100BD6265 /* JWAddBlogViewController.h */,
+				679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */,
+				679D74D8196FCF7900BD6265 /* JWListBlogViewController.h */,
+				679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */,
+				679D74DB196FD06700BD6265 /* JWBlog.h */,
+				679D74DC196FD06700BD6265 /* JWBlog.m */,
+				679D74D5196FCE0B00BD6265 /* JWBlogDetailCell.h */,
+				679D74D6196FCE0B00BD6265 /* JWBlogDetailCell.m */,
 				679D74B8196FCAD300BD6265 /* Images.xcassets */,
 				679D74A7196FCAD300BD6265 /* Supporting Files */,
 			);
@@ -250,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679D74DA196FCF7900BD6265 /* JWListBlogViewController.m in Sources */,
+				679D74E0196FD57100BD6265 /* JWAddBlogViewController.m in Sources */,
 				679D74AD196FCAD300BD6265 /* main.m in Sources */,
-				679D74B7196FCAD300BD6265 /* JWViewController.m in Sources */,
+				679D74D7196FCE0B00BD6265 /* JWBlogDetailCell.m in Sources */,
+				679D74DD196FD06800BD6265 /* JWBlog.m in Sources */,
 				679D74B1196FCAD300BD6265 /* JWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +475,7 @@
 				679D74D1196FCAD400BD6265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		679D74D2196FCAD400BD6265 /* Build configuration list for PBXNativeTarget "MicroblogTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +484,7 @@
 				679D74D4196FCAD400BD6265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
