@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6723BB62197171AC00EA80B4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6723BB61197171AC00EA80B4 /* User.m */; };
+		672C81DC19715F4D004B7362 /* Blog.m in Sources */ = {isa = PBXBuildFile; fileRef = 672C81DB19715F4D004B7362 /* Blog.m */; };
+		672C81DF19716373004B7362 /* JWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672C81DE19716373004B7362 /* JWLoginViewController.m */; };
+		6772E5241972259B00D2C0BD /* JWBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6772E5231972259B00D2C0BD /* JWBlog.m */; };
+		6772E527197235B200D2C0BD /* JWShowBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6772E526197235B200D2C0BD /* JWShowBlogViewController.m */; };
+		6772E52A1972613A00D2C0BD /* JWRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6772E5291972613A00D2C0BD /* JWRegisterViewController.m */; };
+		6772E52D197263D100D2C0BD /* JWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6772E52C197263D100D2C0BD /* JWUser.m */; };
 		679D74A1196FCAD300BD6265 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A0196FCAD300BD6265 /* Foundation.framework */; };
 		679D74A3196FCAD300BD6265 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A2196FCAD300BD6265 /* CoreGraphics.framework */; };
 		679D74A5196FCAD300BD6265 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D74A4196FCAD300BD6265 /* UIKit.framework */; };
@@ -22,8 +29,9 @@
 		679D74CC196FCAD400BD6265 /* MicroblogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74CB196FCAD400BD6265 /* MicroblogTests.m */; };
 		679D74D7196FCE0B00BD6265 /* JWBlogDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74D6196FCE0B00BD6265 /* JWBlogDetailCell.m */; };
 		679D74DA196FCF7900BD6265 /* JWListBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */; };
-		679D74DD196FD06800BD6265 /* JWBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74DC196FD06700BD6265 /* JWBlog.m */; };
 		679D74E0196FD57100BD6265 /* JWAddBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */; };
+		67F082EF1970B763007D3C3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F082EE1970B763007D3C3B /* CoreData.framework */; };
+		67F082F21970B851007D3C3B /* MicroblogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67F082F01970B851007D3C3B /* MicroblogModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6723BB60197171AC00EA80B4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		6723BB61197171AC00EA80B4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		672C81DA19715F4D004B7362 /* Blog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blog.h; sourceTree = "<group>"; };
+		672C81DB19715F4D004B7362 /* Blog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blog.m; sourceTree = "<group>"; };
+		672C81DD19716373004B7362 /* JWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLoginViewController.h; sourceTree = "<group>"; };
+		672C81DE19716373004B7362 /* JWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLoginViewController.m; sourceTree = "<group>"; };
+		6772E5221972259B00D2C0BD /* JWBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBlog.h; sourceTree = "<group>"; };
+		6772E5231972259B00D2C0BD /* JWBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBlog.m; sourceTree = "<group>"; };
+		6772E525197235B200D2C0BD /* JWShowBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWShowBlogViewController.h; sourceTree = "<group>"; };
+		6772E526197235B200D2C0BD /* JWShowBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWShowBlogViewController.m; sourceTree = "<group>"; };
+		6772E5281972613A00D2C0BD /* JWRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRegisterViewController.h; sourceTree = "<group>"; };
+		6772E5291972613A00D2C0BD /* JWRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRegisterViewController.m; sourceTree = "<group>"; };
+		6772E52B197263D100D2C0BD /* JWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWUser.h; sourceTree = "<group>"; };
+		6772E52C197263D100D2C0BD /* JWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWUser.m; sourceTree = "<group>"; };
 		679D749D196FCAD300BD6265 /* Microblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Microblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		679D74A0196FCAD300BD6265 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		679D74A2196FCAD300BD6265 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,10 +80,10 @@
 		679D74D6196FCE0B00BD6265 /* JWBlogDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBlogDetailCell.m; sourceTree = "<group>"; };
 		679D74D8196FCF7900BD6265 /* JWListBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWListBlogViewController.h; sourceTree = "<group>"; };
 		679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWListBlogViewController.m; sourceTree = "<group>"; };
-		679D74DB196FD06700BD6265 /* JWBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBlog.h; sourceTree = "<group>"; };
-		679D74DC196FD06700BD6265 /* JWBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBlog.m; sourceTree = "<group>"; };
 		679D74DE196FD57100BD6265 /* JWAddBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAddBlogViewController.h; sourceTree = "<group>"; };
 		679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAddBlogViewController.m; sourceTree = "<group>"; };
+		67F082EE1970B763007D3C3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		67F082F11970B851007D3C3B /* MicroblogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicroblogModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F082EF1970B763007D3C3B /* CoreData.framework in Frameworks */,
 				679D74A3196FCAD300BD6265 /* CoreGraphics.framework in Frameworks */,
 				679D74A5196FCAD300BD6265 /* UIKit.framework in Frameworks */,
 				679D74A1196FCAD300BD6265 /* Foundation.framework in Frameworks */,
@@ -110,6 +133,7 @@
 		679D749F196FCAD300BD6265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67F082EE1970B763007D3C3B /* CoreData.framework */,
 				679D74A0196FCAD300BD6265 /* Foundation.framework */,
 				679D74A2196FCAD300BD6265 /* CoreGraphics.framework */,
 				679D74A4196FCAD300BD6265 /* UIKit.framework */,
@@ -124,15 +148,24 @@
 				679D74AF196FCAD300BD6265 /* JWAppDelegate.h */,
 				679D74B0196FCAD300BD6265 /* JWAppDelegate.m */,
 				679D74B2196FCAD300BD6265 /* Main.storyboard */,
+				6772E525197235B200D2C0BD /* JWShowBlogViewController.h */,
+				6772E526197235B200D2C0BD /* JWShowBlogViewController.m */,
 				679D74DE196FD57100BD6265 /* JWAddBlogViewController.h */,
 				679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */,
 				679D74D8196FCF7900BD6265 /* JWListBlogViewController.h */,
 				679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */,
-				679D74DB196FD06700BD6265 /* JWBlog.h */,
-				679D74DC196FD06700BD6265 /* JWBlog.m */,
 				679D74D5196FCE0B00BD6265 /* JWBlogDetailCell.h */,
 				679D74D6196FCE0B00BD6265 /* JWBlogDetailCell.m */,
+				672C81DD19716373004B7362 /* JWLoginViewController.h */,
+				672C81DE19716373004B7362 /* JWLoginViewController.m */,
+				6772E5281972613A00D2C0BD /* JWRegisterViewController.h */,
+				6772E5291972613A00D2C0BD /* JWRegisterViewController.m */,
+				6772E5221972259B00D2C0BD /* JWBlog.h */,
+				6772E5231972259B00D2C0BD /* JWBlog.m */,
+				6772E52B197263D100D2C0BD /* JWUser.h */,
+				6772E52C197263D100D2C0BD /* JWUser.m */,
 				679D74B8196FCAD300BD6265 /* Images.xcassets */,
+				67F082F31970B898007D3C3B /* CoreData */,
 				679D74A7196FCAD300BD6265 /* Supporting Files */,
 			);
 			path = Microblog;
@@ -165,6 +198,18 @@
 				679D74C8196FCAD400BD6265 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67F082F31970B898007D3C3B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				67F082F01970B851007D3C3B /* MicroblogModel.xcdatamodeld */,
+				672C81DA19715F4D004B7362 /* Blog.h */,
+				672C81DB19715F4D004B7362 /* Blog.m */,
+				6723BB60197171AC00EA80B4 /* User.h */,
+				6723BB61197171AC00EA80B4 /* User.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,11 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6723BB62197171AC00EA80B4 /* User.m in Sources */,
+				6772E527197235B200D2C0BD /* JWShowBlogViewController.m in Sources */,
 				679D74DA196FCF7900BD6265 /* JWListBlogViewController.m in Sources */,
 				679D74E0196FD57100BD6265 /* JWAddBlogViewController.m in Sources */,
+				672C81DC19715F4D004B7362 /* Blog.m in Sources */,
+				6772E52D197263D100D2C0BD /* JWUser.m in Sources */,
+				672C81DF19716373004B7362 /* JWLoginViewController.m in Sources */,
+				6772E52A1972613A00D2C0BD /* JWRegisterViewController.m in Sources */,
 				679D74AD196FCAD300BD6265 /* main.m in Sources */,
+				6772E5241972259B00D2C0BD /* JWBlog.m in Sources */,
 				679D74D7196FCE0B00BD6265 /* JWBlogDetailCell.m in Sources */,
-				679D74DD196FD06800BD6265 /* JWBlog.m in Sources */,
+				67F082F21970B851007D3C3B /* MicroblogModel.xcdatamodeld in Sources */,
 				679D74B1196FCAD300BD6265 /* JWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +539,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		67F082F01970B851007D3C3B /* MicroblogModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				67F082F11970B851007D3C3B /* MicroblogModel.xcdatamodel */,
+			);
+			currentVersion = 67F082F11970B851007D3C3B /* MicroblogModel.xcdatamodel */;
+			path = MicroblogModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 679D7495196FCAD300BD6265 /* Project object */;
 }
