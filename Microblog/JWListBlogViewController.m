@@ -16,6 +16,7 @@
 #define MORE_CELL_HEIGHT 50
 
 #define BLOG_NUMBER_ONCE 5
+#define BLOG_DETAIL_LENGTH 30
 
 @interface JWListBlogViewController ()
 
@@ -23,9 +24,9 @@
 
 @implementation JWListBlogViewController {
 //    NSMutableArray *blogs;
-    NSArray *blogs;
-    NSUInteger numOfBlogsShown;
-    BOOL showMore;
+    NSArray *blogs; // Reserve the blogs to be shown on the screen.
+    NSUInteger numOfBlogsShown; // The number of blogs shown on the screen in real time.
+    BOOL showMore; // Indicate whether a showmore cell is needed.
 //    NSUInteger selectedRow;
 }
 
@@ -115,6 +116,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == numOfBlogsShown) {
+        // Show a showmore button if needed.
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"More"
                                                                 forIndexPath:indexPath];
         return cell;
@@ -123,9 +125,15 @@
                                                                  forIndexPath:indexPath];
         
         // Configure the cell...
+        // Set the infor of the blog cell.
         Blog *blog = [blogs objectAtIndex:indexPath.row];
         cell.authorLabel.text = blog.author;
-        cell.contentLabel.text = blog.content;
+        if ([blog.content length] > BLOG_DETAIL_LENGTH) {
+            cell.contentLabel.text = [[blog.content substringToIndex:BLOG_DETAIL_LENGTH] stringByAppendingString:@"..."];
+        } else {
+            cell.contentLabel.text = blog.content;
+        }
+        cell.contentLabel.verticalAlign = VerticalAlignmentTop;
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
         cell.datetimeLabel.text = [dateFormatter stringFromDate:blog.datetime];
@@ -196,6 +204,8 @@
     if ([segue.identifier isEqualToString:@"AddBlog"]) {
         UINavigationController *navigationController = [segue destinationViewController];
         JWAddBlogViewController *addBlogViewController = [[navigationController viewControllers] objectAtIndex:0];
+        
+        // Set the delegate for add blog view controller.
         addBlogViewController.delegate = self;
     } else if ([segue.identifier isEqualToString:@"ShowBlog"]) {
         // Get the index path of the clicked cell.

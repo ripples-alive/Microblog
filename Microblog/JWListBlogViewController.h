@@ -13,6 +13,6 @@
 
 @interface JWListBlogViewController : UITableViewController <JWAddBlogDelegate, JWDeleteBlogDelegate>
 
-@property (nonatomic, copy) NSString *loginUser;
+@property (nonatomic, copy) NSString *loginUser; // Reserve nickname of the user logined.
 
 @end

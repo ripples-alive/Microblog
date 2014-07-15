@@ -12,8 +12,8 @@
 
 @interface JWLoginViewController : UIViewController <JWRegisterDelegate, UITextFieldDelegate>
 
-@property (nonatomic, strong) IBOutlet UITextField *usernameLabel;
-@property (nonatomic, strong) IBOutlet UITextField *passwordLabel;
+@property (nonatomic, strong) IBOutlet UITextField *usernameField;
+@property (nonatomic, strong) IBOutlet UITextField *passwordField;
 
 - (IBAction)login:(id)sender;
 

@@ -20,37 +20,37 @@
 {
     // Override point for customization after application launch.
     
-    NSManagedObjectContext *context = self.managedObjectContext;
+//    NSManagedObjectContext *context = self.managedObjectContext;
     
 //    NSManagedObject *obj = [NSEntityDescription insertNewObjectForEntityForName:@"User"
 //                                                         inManagedObjectContext:context];
 //    [obj setValue:@"Jayvic" forKey:@"username"];
 //    [obj setValue:@"q" forKey:@"password"];
-//    [obj setValue:@"文琪" forKey:@"nickname"];
+//    [obj setValue:@"JayvicWen" forKey:@"nickname"];
 //    [self saveContext];
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"User"
-                                              inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    NSError *error;
-    NSArray *result = [context executeFetchRequest:fetchRequest error:&error];
-    for (User *user in result) {
-        NSLog(@"%@", user.username);
-        NSLog(@"%@", user.password);
-        NSLog(@"%@", user.nickname);
-        NSLog(@"%d", [user.blogs count]);
-        for (Blog *blog in user.blogs) {
-            NSLog(@"======");
-            NSLog(@"%@", blog.author);
-            NSLog(@"%@", blog.content);
-            NSLog(@"%@", blog.datetime);
-            NSLog(@"%@", blog.user.nickname);
-//            [context deleteObject:blog];
-        }
-//        [context deleteObject:user];
-    }
-//    [self saveContext];
+//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"User"
+//                                              inManagedObjectContext:context];
+//    [fetchRequest setEntity:entity];
+//    NSError *error;
+//    NSArray *result = [context executeFetchRequest:fetchRequest error:&error];
+//    for (User *user in result) {
+//        NSLog(@"%@", user.username);
+//        NSLog(@"%@", user.password);
+//        NSLog(@"%@", user.nickname);
+//        NSLog(@"%d", [user.blogs count]);
+//        for (Blog *blog in user.blogs) {
+//            NSLog(@"======");
+//            NSLog(@"%@", blog.author);
+//            NSLog(@"%@", blog.content);
+//            NSLog(@"%@", blog.datetime);
+//            NSLog(@"%@", blog.user.nickname);
+////            [context deleteObject:blog];
+//        }
+////        [context deleteObject:user];
+//    }
+////    [self saveContext];
 
 //    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
 //    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Blog"
@@ -60,9 +60,10 @@
 //    NSArray *result = [context executeFetchRequest:fetchRequest error:&error];
 //    NSLog(@"%d", [result count]);
 //    for (Blog *blog in result) {
-//        [context deleteObject:blog];
+//        NSLog(@"%@", blog);
+////        [context deleteObject:blog];
 //    }
-//    [self saveContext];
+////    [self saveContext];
     
     return YES;
 }
@@ -205,6 +206,7 @@
     return results;
 }
 
+// Fetch the blogs which is published by a certain author.
 - (NSArray *)fetchBlogs:(NSString *)nickname
 {
     // Get fetch request from template.
@@ -221,6 +223,7 @@
     return [self runFetchRequest:fetchRequest];
 }
 
+// Fetch the user whose username and password matches the given one.
 - (NSArray *)fetchMatchUsername:(NSString *)username matchPassword:(NSString *)password
 {
     // Get fetch request from template.
@@ -235,6 +238,7 @@
     return [self runFetchRequest:fetchRequest];
 }
 
+// Fetch the user whose username matches the given one.
 - (NSArray *)fetchMatchUsername:(NSString *)username
 {
     // Get fetch request from template.
@@ -246,7 +250,7 @@
     return [self runFetchRequest:fetchRequest];
 }
 
-
+// Fetch the user whose nickname matches the given one.
 - (NSArray *)fetchMatchNickname:(NSString *)nickname
 {
     // Get fetch request from template.

@@ -17,6 +17,10 @@
 @synthesize delegate;
 @synthesize blog;
 
+@synthesize contentLabel;
+@synthesize authorLabel;
+@synthesize datetimeLabel;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,7 +35,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"%@", blog);
+    // Show blog details on the screen.
+    self.authorLabel.text = blog.author;
+    self.contentLabel.text = blog.content;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    self.datetimeLabel.text = [dateFormatter stringFromDate:blog.datetime];
+    
+    // Set vertical alignment of content label to top.
+    self.contentLabel.verticalAlign = VerticalAlignmentTop;
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,6 +73,7 @@
 
 - (IBAction)deleteBlog:(id)sender
 {
+    // Show alert to confirm deleting blog.
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
                                                     message:@"确定删除吗？"
                                                    delegate:self

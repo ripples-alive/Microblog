@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JWMyLabel.h"
 
 @interface JWBlogDetailCell : UITableViewCell
 
 @property (nonatomic, strong) IBOutlet UILabel *authorLabel;
 @property (nonatomic, strong) IBOutlet UILabel *datetimeLabel;
-@property (nonatomic, strong) IBOutlet UILabel *contentLabel;
+@property (nonatomic, strong) IBOutlet JWMyLabel *contentLabel;
 
 @end

@@ -8,11 +8,18 @@
 
 #import "JWAddBlogViewController.h"
 
+#define KEYBOARD_HEIGHT 216.0
+
 @interface JWAddBlogViewController ()
+
+// Withdraw keyboard when recognized tap gesture.
+- (void)viewTapped:(UITapGestureRecognizer *)tap;
 
 @end
 
-@implementation JWAddBlogViewController
+@implementation JWAddBlogViewController {
+    NSString *content;
+}
 
 @synthesize delegate;
 
@@ -36,6 +43,23 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // Set input view border.
+    self.inputView.layer.borderColor = [[UIColor grayColor] CGColor];
+    self.inputView.layer.borderWidth = 1.0;
+    self.inputView.layer.cornerRadius = 5.0;
+    
+    // Hide table view cell's seperator.
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // Add tap gesture.
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(viewTapped:)];
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
+    
+    // Forbid the table view cell to be selected.
+    [(UITableViewCell *)self.inputView.superview.superview.superview setSelectionStyle:UITableViewCellSelectionStyleNone];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,7 +89,7 @@
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
     // Configure the cell...
     
@@ -122,6 +146,54 @@
 }
 */
 
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+//}
+
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    // Calc differ between the pos of keyboard and text view.
+    CGRect frame = textView.frame;
+    CGFloat offset = [textView convertPoint:frame.origin toView:nil].y + frame.size.height -
+        (self.view.frame.size.height - KEYBOARD_HEIGHT);
+    
+    // Move the whole view up if offset is negative.
+    if (offset > 0) {
+        self.view.frame = CGRectMake(0, -offset, self.view.frame.size.width, self.view.frame.size.height);
+    }
+    
+    [UIView commitAnimations];
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    // Calc differ between the pos of keyboard and text view.
+//    CGRect textRect = [textView.attributedText boundingRectWithSize:textView.frame.size
+//                                                            options:NSStringDrawingUsesLineFragmentOrigin
+//                                                            context:nil];
+    CGFloat offset = [textView convertPoint:textView.frame.origin toView:nil].y
+        + MIN(textView.contentSize.height, textView.frame.size.height)
+        - (self.view.frame.size.height - KEYBOARD_HEIGHT);
+    
+    // Move the whole view up if offset is negative.
+    if (offset > 0) {
+        [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+        [UIView setAnimationDuration:0.3f];
+        self.view.frame = CGRectMake(0, -offset, self.view.frame.size.width, self.view.frame.size.height);
+        [UIView commitAnimations];
+    }
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    // Move the whole view back.
+    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
+    [UIView commitAnimations];
+}
+
+
 - (IBAction)cancel:(id)sender
 {
     // Close current scene and return.
@@ -130,8 +202,24 @@
 
 - (IBAction)done:(id)sender
 {
+    // Get content from input view.
+    content = self.inputView.text;
+    
+    // Judge whether content is empty.
+    if ((content == nil) || [content isEqualToString:@""]) {
+        [self cancel:sender];
+        return;
+    }
+    
     // Add new blog and close current scene.
     [self.delegate addBlogViewController:self didAddBlog:self.inputView.text];
+}
+
+// Withdraw keyboard when recognized tap gesture.
+- (void)viewTapped:(UITapGestureRecognizer *)tap
+{
+    // Withdraw the keyboard.
+    [self.inputView resignFirstResponder];
 }
 
 @end

@@ -11,7 +11,7 @@
 @interface JWBlog : NSObject
 
 @property (nonatomic, copy) NSString *author;
-@property (nonatomic, strong) NSDate *datetime;
+@property (nonatomic, strong) NSDate *datetime; // Publish time of the blog.
 @property (nonatomic, copy) NSString *content;
 
 @end

@@ -10,6 +10,8 @@
 		6723BB62197171AC00EA80B4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6723BB61197171AC00EA80B4 /* User.m */; };
 		672C81DC19715F4D004B7362 /* Blog.m in Sources */ = {isa = PBXBuildFile; fileRef = 672C81DB19715F4D004B7362 /* Blog.m */; };
 		672C81DF19716373004B7362 /* JWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672C81DE19716373004B7362 /* JWLoginViewController.m */; };
+		676CC09219742437000964DA /* zl1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 676CC09019742437000964DA /* zl1.jpg */; };
+		676CC09319742437000964DA /* zl2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 676CC09119742437000964DA /* zl2.jpg */; };
 		6772E5241972259B00D2C0BD /* JWBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6772E5231972259B00D2C0BD /* JWBlog.m */; };
 		6772E527197235B200D2C0BD /* JWShowBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6772E526197235B200D2C0BD /* JWShowBlogViewController.m */; };
 		6772E52A1972613A00D2C0BD /* JWRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6772E5291972613A00D2C0BD /* JWRegisterViewController.m */; };
@@ -30,6 +32,7 @@
 		679D74D7196FCE0B00BD6265 /* JWBlogDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74D6196FCE0B00BD6265 /* JWBlogDetailCell.m */; };
 		679D74DA196FCF7900BD6265 /* JWListBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */; };
 		679D74E0196FD57100BD6265 /* JWAddBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */; };
+		67B1595C1973FF060013A6AF /* JWMyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B1595B1973FF060013A6AF /* JWMyLabel.m */; };
 		67F082EF1970B763007D3C3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F082EE1970B763007D3C3B /* CoreData.framework */; };
 		67F082F21970B851007D3C3B /* MicroblogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67F082F01970B851007D3C3B /* MicroblogModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -51,6 +54,8 @@
 		672C81DB19715F4D004B7362 /* Blog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blog.m; sourceTree = "<group>"; };
 		672C81DD19716373004B7362 /* JWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLoginViewController.h; sourceTree = "<group>"; };
 		672C81DE19716373004B7362 /* JWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLoginViewController.m; sourceTree = "<group>"; };
+		676CC09019742437000964DA /* zl1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zl1.jpg; sourceTree = "<group>"; };
+		676CC09119742437000964DA /* zl2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zl2.jpg; sourceTree = "<group>"; };
 		6772E5221972259B00D2C0BD /* JWBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBlog.h; sourceTree = "<group>"; };
 		6772E5231972259B00D2C0BD /* JWBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBlog.m; sourceTree = "<group>"; };
 		6772E525197235B200D2C0BD /* JWShowBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWShowBlogViewController.h; sourceTree = "<group>"; };
@@ -82,6 +87,8 @@
 		679D74D9196FCF7900BD6265 /* JWListBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWListBlogViewController.m; sourceTree = "<group>"; };
 		679D74DE196FD57100BD6265 /* JWAddBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAddBlogViewController.h; sourceTree = "<group>"; };
 		679D74DF196FD57100BD6265 /* JWAddBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAddBlogViewController.m; sourceTree = "<group>"; };
+		67B1595A1973FF060013A6AF /* JWMyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWMyLabel.h; sourceTree = "<group>"; };
+		67B1595B1973FF060013A6AF /* JWMyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWMyLabel.m; sourceTree = "<group>"; };
 		67F082EE1970B763007D3C3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		67F082F11970B851007D3C3B /* MicroblogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicroblogModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		676CC0941974244F000964DA /* image */ = {
+			isa = PBXGroup;
+			children = (
+				676CC09019742437000964DA /* zl1.jpg */,
+				676CC09119742437000964DA /* zl2.jpg */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		679D7494196FCAD300BD6265 = {
 			isa = PBXGroup;
 			children = (
@@ -160,11 +176,14 @@
 				672C81DE19716373004B7362 /* JWLoginViewController.m */,
 				6772E5281972613A00D2C0BD /* JWRegisterViewController.h */,
 				6772E5291972613A00D2C0BD /* JWRegisterViewController.m */,
+				67B1595A1973FF060013A6AF /* JWMyLabel.h */,
+				67B1595B1973FF060013A6AF /* JWMyLabel.m */,
 				6772E5221972259B00D2C0BD /* JWBlog.h */,
 				6772E5231972259B00D2C0BD /* JWBlog.m */,
 				6772E52B197263D100D2C0BD /* JWUser.h */,
 				6772E52C197263D100D2C0BD /* JWUser.m */,
 				679D74B8196FCAD300BD6265 /* Images.xcassets */,
+				676CC0941974244F000964DA /* image */,
 				67F082F31970B898007D3C3B /* CoreData */,
 				679D74A7196FCAD300BD6265 /* Supporting Files */,
 			);
@@ -290,6 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				679D74B9196FCAD300BD6265 /* Images.xcassets in Resources */,
+				676CC09219742437000964DA /* zl1.jpg in Resources */,
+				676CC09319742437000964DA /* zl2.jpg in Resources */,
 				679D74AB196FCAD300BD6265 /* InfoPlist.strings in Resources */,
 				679D74B4196FCAD300BD6265 /* Main.storyboard in Resources */,
 			);
@@ -311,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6723BB62197171AC00EA80B4 /* User.m in Sources */,
+				67B1595C1973FF060013A6AF /* JWMyLabel.m in Sources */,
 				6772E527197235B200D2C0BD /* JWShowBlogViewController.m in Sources */,
 				679D74DA196FCF7900BD6265 /* JWListBlogViewController.m in Sources */,
 				679D74E0196FD57100BD6265 /* JWAddBlogViewController.m in Sources */,

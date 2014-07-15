@@ -19,11 +19,11 @@
 
 @end
 
-@interface JWAddBlogViewController : UITableViewController
+@interface JWAddBlogViewController : UITableViewController <UITextViewDelegate>
 
 @property (nonatomic, weak) id <JWAddBlogDelegate> delegate;
 
-@property (nonatomic, strong) IBOutlet UITextView *inputView;
+@property (nonatomic, strong) IBOutlet UITextView *inputView; // Text view for inputing blog content.
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)done:(id)sender;

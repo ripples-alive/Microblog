@@ -24,9 +24,13 @@
 - (NSURL *)applicationDocumentsDirectory;
 
 - (NSArray *)runFetchRequest:(NSFetchRequest *)fetchRequest;
+// Fetch the blogs which is published by a certain author.
 - (NSArray *)fetchBlogs:(NSString *)nickname;
+// Fetch the user whose username and password matches the given one.
 - (NSArray *)fetchMatchUsername:(NSString *)username matchPassword:(NSString *)password;
+// Fetch the user whose username matches the given one.
 - (NSArray *)fetchMatchUsername:(NSString *)username;
+// Fetch the user whose nickname matches the given one.
 - (NSArray *)fetchMatchNickname:(NSString *)nickname;
 - (void)insertBlog:(JWBlog *)theBlog;
 - (void)deleteBlog:(Blog *)blog;
